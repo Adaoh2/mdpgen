@@ -5,7 +5,7 @@
 			G&eacute;n&eacute;rateur de mot de passe
 		</title>
 
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="aide" type="text" href="aide.html">
@@ -230,24 +230,26 @@
 			<span onclick="dark()" class="slider round"></span>
 		</label>
 
-		<a>mode nuit/jour</a>
+		<a>mode jour/nuit</a>
 
 		<body>
 
 		<style>
 
 				body {
-				  -webkit-transition-duration: 2.0s; /* Safari */
-  				transition-duration: 2.0s;
-					background: rgb(36, 36, 36);
+				  -webkit-transition-duration: 1.5s; /* Safari */
+  				transition-duration: 1.5s;
+					background: rgb(55, 55, 55); /*blanc*/
+					transition-timing-function: linear;
 				}
 
 				#content {
 						max-width: 500px;
 						margin: auto;
-						background: rgb(31, 31, 31);
+						background: rgb(30, 30, 30); /*gris pale*/
 						padding: 10px;
 						border-radius: 6px;
+						
 				}
 				
 
@@ -258,23 +260,23 @@
 
     <script>
     function dark() {
-        if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+			if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
 							
-				document.getElementById("content").style.backgroundColor = 'rgb(31, 31, 31)';
-					
-				document.body.style.backgroundColor = 'rgb(55, 55, 55)';
-				
-				document.body.style.color = 'rgb(235, 235, 235)';
-
-				}
-				
-        else {
-
-					document.getElementById("content").style.backgroundColor = 'rgb(235, 235, 235)';
-
-					document.body.style.backgroundColor = 'rgb(255, 255, 255)';
-
-					document.body.style.color = 'rgb(31, 31, 31)';
+							document.getElementById("content").style.backgroundColor = 'rgb(30, 30, 30)';
+								
+							document.body.style.backgroundColor = 'rgb(55, 55, 55)';
+							
+							document.body.style.color = 'rgb(235, 235, 235)';
+			
+							}
+							
+							else {
+			
+								document.getElementById("content").style.backgroundColor = 'rgb(235, 235, 235)';
+			
+								document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+			
+								document.body.style.color = 'rgb(30, 30, 30)';
         }
     }
     </script>
