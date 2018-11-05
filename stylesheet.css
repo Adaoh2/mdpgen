@@ -2,7 +2,7 @@
 /* COULEUR PAR  DEFAUT */
 body {
   background-color: rgb(0, 0, 0);
-  color: #bbbbbb;
+  color: rgb(235, 235, 235);
   font-family: 'Andale Mono', 'monospace';
   font-size: 15px;
   margin: 20px;
@@ -133,7 +133,7 @@ label {
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: rgb(207, 0, 0);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -182,7 +182,7 @@ label {
   to {top: 0; opacity: 1}
 }
 
-/*//////////////////////////////////// MODE SOMBRE CLAIR ////////////////////////////////////*/
+/*//////////////////////////////////// MODE jour/nuit ////////////////////////////////////*/
 
 /* The switch - the box around the slider */
 .switch {
